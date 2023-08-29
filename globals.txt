@@ -1,0 +1,6 @@
+// Text Pallete
+--orange-web: #F8A519ff;
+--walnut-brown: #685E57ff;
+--jet: #2F2E2Eff;
+--garnet: #683730ff;
+--linen: #F3EBE0ff;
