@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        vastshadow: ['Vast Shadow', 'serif'],
       },
       colors: {
         orange: '#F8A519',
