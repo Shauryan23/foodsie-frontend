@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MenuButton from './MenuButton';
+import './Header.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="nav">
+    <header>
       <nav>
-        <div className="mx-10">
-          <div className="flex justify-between mt-0 pt-4 mb-3 pb-2 animate-slide-down items-center">
+        <div className="nav-container">
+          <div className="flex justify-between mx-10 mt-0 pt-4 mb-3 pb-2 animate-slide-down items-center">
             <div>
               <a href="/" className="flex items-center logo-grow">
                 <img
@@ -18,15 +21,41 @@ const Header = () => {
                 </span>
               </a>
             </div>
-            <div>
+            <div className="-z-10">
               <span className="px-8">Home</span>
               <span className="px-8">Menu</span>
               <span className="px-8">Contact</span>
               <span className="px-8">Shop</span>
             </div>
-            <div>
+            <div onClick={() => setMenuOpen(!menuOpen)}>
               <MenuButton />
             </div>
+          </div>
+          <div
+            className="nav-overlay"
+            style={{
+              top: menuOpen ? '0' : '-100%',
+              transitionDelay: menuOpen ? '0s' : '0s',
+            }}
+          >
+            {/* <ul className="nav-links">
+              <li className="nav-items">
+                <Link to="/">Home</Link>
+                <div className="nav-item-wrapper"></div>
+              </li>
+              <li className="nav-items">
+                <Link to="/">Shop</Link>
+                <div className="nav-item-wrapper"></div>
+              </li>
+              <li className="nav-items">
+                <Link to="/">Contact</Link>
+                <div className="nav-item-wrapper"></div>
+              </li>
+              <li className="nav-items">
+                <Link to="/">About</Link>
+                <div className="nav-item-wrapper"></div>
+              </li>
+            </ul> */}
           </div>
         </div>
       </nav>
