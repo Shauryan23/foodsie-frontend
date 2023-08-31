@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MenuButton from './MenuButton';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,24 +39,108 @@ const Header = () => {
               transitionDelay: menuOpen ? '0s' : '0s',
             }}
           >
-            {/* <ul className="nav-links">
-              <li className="nav-items">
-                <Link to="/">Home</Link>
+            <ul className="nav-links">
+              <li className="nav-item">
+                <a
+                  href="/"
+                  style={{
+                    top: menuOpen ? '0' : '120px',
+                    transitionDelay: menuOpen ? '0.8s' : '0s',
+                  }}
+                >
+                  Account
+                </a>
                 <div className="nav-item-wrapper"></div>
               </li>
-              <li className="nav-items">
-                <Link to="/">Shop</Link>
+              <li className="nav-item">
+                <a
+                  href="/Shop"
+                  style={{
+                    top: menuOpen ? '0' : '120px',
+                    transitionDelay: menuOpen ? '1s' : '0s',
+                  }}
+                >
+                  Shop
+                </a>
                 <div className="nav-item-wrapper"></div>
               </li>
-              <li className="nav-items">
-                <Link to="/">Contact</Link>
+              <li className="nav-item">
+                <a
+                  href="/"
+                  style={{
+                    top: menuOpen ? '0' : '120px',
+                    transitionDelay: menuOpen ? '1.2s' : '0s',
+                  }}
+                >
+                  Contact
+                </a>
                 <div className="nav-item-wrapper"></div>
               </li>
-              <li className="nav-items">
-                <Link to="/">About</Link>
+              <li className="nav-item">
+                <a
+                  href="/"
+                  style={{
+                    top: menuOpen ? '0' : '120px',
+                    transitionDelay: menuOpen ? '1.4s' : '0s',
+                  }}
+                >
+                  About
+                </a>
                 <div className="nav-item-wrapper"></div>
               </li>
-            </ul> */}
+            </ul>
+            <div className="nav-footer">
+              <div className="flex flex-col">
+                <div
+                  className="footer-end flex justify-end"
+                  style={{
+                    bottom: menuOpen ? '0' : '-20px',
+                    opacity: menuOpen ? '1' : '0',
+                    transitionDelay: menuOpen ? '2s' : '0s',
+                  }}
+                >
+                  <span>Shauryan Singh</span>
+                </div>
+                <div
+                  className="footer-end flex justify-start text-sm"
+                  style={{
+                    bottom: menuOpen ? '0' : '-20px',
+                    opacity: menuOpen ? '1' : '0',
+                    transitionDelay: menuOpen ? '2.5s' : '0s',
+                  }}
+                >
+                  <span>Mumbai, India.</span>
+                </div>
+              </div>
+              <div className="nav-social-links">
+                <ul>
+                  <li className="flex justify-end">
+                    <a
+                      href="/social-LinkedIn"
+                      style={{
+                        bottom: menuOpen ? '0' : '-20px',
+                        opacity: menuOpen ? '1' : '0',
+                        transitionDelay: menuOpen ? '2.5s' : '0s',
+                      }}
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li className="flex justify-end">
+                    <a
+                      href="/social-Github"
+                      style={{
+                        bottom: menuOpen ? '0' : '-20px',
+                        opacity: menuOpen ? '1' : '0',
+                        transitionDelay: menuOpen ? '2.5s' : '0s',
+                      }}
+                    >
+                      Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
