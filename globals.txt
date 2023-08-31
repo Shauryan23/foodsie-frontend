@@ -4,3 +4,6 @@
 --jet: #2F2E2Eff;
 --garnet: #683730ff;
 --linen: #F3EBE0ff;
+
+// Interpretation on Animation
+hamboxOpen is to add the background color when the menu is clicked once
