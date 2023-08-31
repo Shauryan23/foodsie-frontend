@@ -12,12 +12,28 @@ export default {
       '3xl': ['28px', '50px'],
       '4xl': ['48px', '58px'],
       '8xl': ['96px', '106px'],
+      '12xl': ['144px', '174px'],
+      '16xl': ['192px', '212px'],
     },
     extend: {
       fontFamily: {
-        quicksand: ['Quicksand', 'sans-serif'],
+        quicksand: [
+          'Quicksand',
+          'Quicksand-Regular',
+          'Quicksand-Medium',
+          'Quicksand-Bold',
+          'sans-serif',
+        ],
         montserrat: ['Montserrat', 'sans-serif'],
         vastshadow: ['Vast Shadow', 'serif'],
+      },
+      fontWeight: {
+        quicksand: {
+          light: 300,
+          normal: 400,
+          medium: 600,
+          bold: 700,
+        },
       },
       colors: {
         orange: '#F8A519',

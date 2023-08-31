@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import MenuButton from './MenuButton';
 import './Header.css';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,24 +15,27 @@ const Header = () => {
                 <img
                   src="https://img.icons8.com/stencil/32/chef-hat.png"
                   alt="Foodsie-logo"
+                  style={{
+                    transform: 'rotate(90deg)',
+                  }}
                 />
                 <span className="pl-1 font-vastshadow text-2xl logo-offset">
                   Foodsie
                 </span>
               </a>
             </div>
-            <div className="-z-10">
+            <div>
               <span className="px-8">Home</span>
               <span className="px-8">Menu</span>
               <span className="px-8">Contact</span>
               <span className="px-8">Shop</span>
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>
+            <div className="z-20" onClick={() => setMenuOpen(!menuOpen)}>
               <MenuButton />
             </div>
           </div>
           <div
-            className="nav-overlay"
+            className="nav-overlay z-10"
             style={{
               top: menuOpen ? '0' : '-100%',
               transitionDelay: menuOpen ? '0s' : '0s',

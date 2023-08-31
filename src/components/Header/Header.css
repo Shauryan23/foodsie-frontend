@@ -105,10 +105,10 @@ ul.nav-links li a {
 
   .nav-footer {
     justify-content: space-around;
+  }
 
-    .nav-social-links ul li a {
-      padding: 0 1em;
-    }
+  .nav-social-links ul li a {
+    padding: 0 1em;
   }
 }
 
