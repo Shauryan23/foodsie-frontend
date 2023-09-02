@@ -4,20 +4,20 @@ import heroImage from '../../assets/images/home-img1.svg';
 
 const Hero = () => {
   return (
-    <div className="hero flex z-5 animate-opacity">
+    <div className="hero flex z-5 animate-opacity mt-10">
       <div className="hero-content flex flex-1 flex-col justify-start items-center p-8">
         <div className="flex flex-row ">
           <div className="text-amber-500 text-12xl font-bold tracking-tight">
             <h1>Fast</h1>
           </div>
           <div className="flex flex-1 flex-col-reverse text-4xl leading-none font-bold mb-7">
-            <h2>Food</h2>
             <h2>Delivery</h2>
+            <h2>Food</h2>
           </div>
         </div>
         <div>
           <div>
-            <span className="font-medium ">
+            <span className="font-medium opacity-50">
               Satisfy your cravings with our lightning-fast food delivery <br />
               service, bringing your favorite flavors right to your doorstep.
             </span>
@@ -90,8 +90,11 @@ const Hero = () => {
               />
             </svg>
           </div>
-          <div className="mt-1">
-            <span>based on xxxx reviews</span>
+          <div className="mt-1 opacity-70">
+            <p>
+              based on{' '}
+              <span className="font-mono tracking-tighter"> xxxx </span> reviews
+            </p>
           </div>
         </div>
       </div>
@@ -100,7 +103,7 @@ const Hero = () => {
           src={heroImage}
           alt="Hero Image"
           className="max-w-full max-h-full"
-          style={{ maxHeight: '80vh' }}
+          style={{ maxHeight: '80vh', marginBottom: '50px' }}
         />
       </div>
     </div>

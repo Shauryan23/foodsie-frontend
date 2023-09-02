@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MenuButton from './MenuButton';
 import './Header.css';
+import logo from '../../assets/icon/chef-64.svg';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,16 +13,25 @@ const Header = () => {
           <div className="flex justify-between mx-10 mt-0 pt-4 mb-3 pb-2 animate-slide-down items-center">
             <div>
               <a href="/" className="flex items-center logo-grow">
-                <img
+                {/* <img
                   src="https://img.icons8.com/stencil/32/chef-hat.png"
                   alt="Foodsie-logo"
                   style={{
                     transform: 'rotate(90deg)',
+                    width: '40px',
+                  }}
+                /> */}
+                <img
+                  src={logo}
+                  alt="Foodsie-logo"
+                  style={{
+                    transform: 'rotate(90deg)',
+                    width: '40px',
                   }}
                 />
-                <span className="pl-1 font-vastshadow text-2xl logo-offset">
+                {/* <span className="pl-1 text-2xl logo-offset font-vastshadow">
                   Foodsie
-                </span>
+                </span> */}
               </a>
             </div>
             <div>
