@@ -36,7 +36,7 @@
 
 /* END */
 
-@layer components {
+/* @layer components {
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -90,7 +90,7 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
+} */
 
 .animate-slide-down {
   animation: slide-down 0.5s ease-out;

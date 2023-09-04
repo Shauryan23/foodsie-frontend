@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const { nextui } = require('@nextui-org/react');
+
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     fontSize: {
       xs: ['12px', '16px'],
@@ -16,6 +22,10 @@ export default {
       '16xl': ['192px', '212px'],
     },
     extend: {
+      fontSize: {
+        xsm: '0.7rem',
+        fts: '0.5rem',
+      },
       fontFamily: {
         quicksand: [
           'Quicksand',
@@ -41,11 +51,22 @@ export default {
         jet: '#2F2E2E',
         garnet: '#683730',
         linen: '#F3EBE0',
+        'card-bg-1': '#E99B87',
+        'card-bg-2': '#e8cea4',
+        'card-bg-2-light': '#fcfaf5',
+        'card-bg-2-lighter': '#f7efe1',
+        'rating-neutral': '#edd9b8',
+        'rating-good': '#b7eebf',
+        'rating-bad': '#ff7373',
+        'card-bg-3': '#564C4D',
+        'card-txt': '#48100E',
+        'card-like': '#48100E',
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',
       },
     },
   },
-  plugins: [],
+  darkMode: 'class',
+  plugins: [nextui()],
 };

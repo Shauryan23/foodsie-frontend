@@ -1,13 +1,27 @@
 import React from 'react';
 import './Categories.css';
+import CategoryCard from '../../Cards/CategoryCard';
 
-const Categories = () => {
+const Categories = ({
+  categoriesArray = ['c1', 'c1', 'c1', 'c1', 'c1', 'c1'],
+}) => {
   return (
-    <div className="flex py-5 background justify-evenly items-center">
-      <div className="flex items-center h-12 mx-5">DIV 1</div>
-      <div className="flex items-center h-12 mx-5">DIV 2</div>
-      <div className="flex items-center h-12 mx-5">DIV 3</div>
-      <div className="flex items-center h-12 mx-5">DIV 4</div>
+    <div className="flex flex-col flex-1 justify-between items-center background">
+      <p className="text-2xl leading-none font-bold m-5">Category</p>
+      <div className="flex flex-wrap flex-1 w-full">
+        {categoriesArray.map((category, index) => (
+          <div
+            key={index}
+            className="flex justify-evenly items-center grow m-3 min-w-[280px]"
+          >
+            <CategoryCard
+              liked={true}
+              title={category}
+              className="p-5 min-w-min"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
