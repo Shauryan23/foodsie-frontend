@@ -8,6 +8,9 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    minWidth: {
+      '1/4': '25%',
+    },
     fontSize: {
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],

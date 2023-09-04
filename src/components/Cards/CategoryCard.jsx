@@ -51,13 +51,18 @@ const CategoryCard = ({
     setIsHidden(true);
   };
 
+  const toggleCardExpansion = () => {
+    setIsHidden(!isHidden);
+  };
+
   return (
     <>
       <Card
         shadow={shadow}
         isPressable
-        onMouseLeave={handleMouseLeave}
-        onMouseEnter={handleMouseEnter}
+        onClick={toggleCardExpansion}
+        // onMouseLeave={handleMouseLeave}
+        // onMouseEnter={handleMouseEnter}
       >
         <CardHeader className="flex justify-center bg-card-bg-2">
           <Button

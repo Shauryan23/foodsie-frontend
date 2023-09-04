@@ -12,7 +12,7 @@ const Categories = ({
         {categoriesArray.map((category, index) => (
           <div
             key={index}
-            className="flex justify-evenly items-center grow m-3 min-w-[280px]"
+            className="flex justify-evenly items-center grow m-3 min-w-1/4"
           >
             <CategoryCard
               liked={true}
