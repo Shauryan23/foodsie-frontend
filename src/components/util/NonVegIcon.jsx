@@ -16,7 +16,7 @@ export const NonVegIcon = () => {
         rx="10"
         ry="10"
         stroke="#FF0000"
-        stroke-width="5"
+        strokeWidth="5"
         fill="none"
       />
 

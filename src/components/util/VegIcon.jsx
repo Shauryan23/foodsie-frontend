@@ -16,7 +16,7 @@ export const VegIcon = () => {
         rx="10"
         ry="10"
         stroke="#4CAF50"
-        stroke-width="5"
+        strokeWidth="5"
         fill="none"
       />
 

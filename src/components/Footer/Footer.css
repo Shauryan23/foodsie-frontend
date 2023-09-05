@@ -1,0 +1,103 @@
+.footer {
+  background-color: #e8cea4;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 25%;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f59e0b;
+}
+
+address p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  background-color: #fff;
+  color: #e8cea4;
+}
