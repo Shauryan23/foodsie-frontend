@@ -1,17 +1,5 @@
-.image-container {
-  border: 5px solid #fff; /* Adjust the border style and color as needed */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
-}
-
 .gradient-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(rgba(253, 187, 19, 0.3), rgba(0, 0, 0, 0.7));
-}
-
-.image-overlay {
-  position: absolute;
-  inset: 0;
-  background-image: url('../assets/images/cover1.jpg');
-  filter: blur(5px);
 }
