@@ -3,7 +3,7 @@ import './Categories.css';
 import CategoryCard from '../../Cards/CategoryCard';
 
 const Categories = ({
-  categoriesArray = ['c1', 'c1', 'c1', 'c1', 'c1', 'c1'],
+  categoriesArray = ['c1', 'c1', 'c1', 'c1', 'c1', 'c1', 'c1', 'c1'],
 }) => {
   return (
     <div className="flex flex-col flex-1 justify-between items-center background">
@@ -12,10 +12,10 @@ const Categories = ({
         {categoriesArray.map((category, index) => (
           <div
             key={index}
-            className="flex justify-evenly items-center grow m-3 min-w-1/4"
+            className="flex justify-evenly items-center grow m-3 min-w-1/5"
           >
             <CategoryCard
-              liked={true}
+              imageSize={14}
               title={category}
               className="p-5 min-w-min"
             />

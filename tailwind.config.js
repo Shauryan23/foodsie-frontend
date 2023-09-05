@@ -9,7 +9,9 @@ export default {
   ],
   theme: {
     minWidth: {
+      '1/2': '50%',
       '1/4': '25%',
+      '1/5': '20%',
     },
     fontSize: {
       xs: ['12px', '16px'],
@@ -25,6 +27,13 @@ export default {
       '16xl': ['192px', '212px'],
     },
     extend: {
+      // typography: {
+      //   'fade-out-content': {
+      //     padding: '10px', // Add padding as needed
+      //     backgroundImage: 'linear-gradient(transparent, white 20px, white)', // Adjust the gradient and distance as needed
+      //     maskImage: 'linear-gradient(180deg, transparent 10%, white 90%)', // Adjust the gradient and distance as needed
+      //   },
+      // },
       fontSize: {
         xsm: '0.7rem',
         fts: '0.5rem',
@@ -71,5 +80,8 @@ export default {
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [
+    nextui(),
+    // require('@tailwindcss/typography')
+  ],
 };
