@@ -3,6 +3,10 @@
   z-index: 2;
 } */
 
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out;
+}
+
 .nav-overlay {
   position: fixed;
   background: #e9dbc1;
