@@ -1,0 +1,16 @@
+.food-item-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.food-item-scroll::-webkit-scrollbar-thumb {
+  background: #e8cea4;
+  border-radius: 5px;
+}
+
+.food-item-scroll::-webkit-scrollbar-thumb:hover {
+  background: #c38f64;
+}
+
+.food-item-scroll::-webkit-scrollbar-thumb:active {
+  background: #c38f64;
+}

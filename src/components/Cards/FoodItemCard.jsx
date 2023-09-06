@@ -8,6 +8,7 @@ import {
   Divider,
   Image,
 } from '@nextui-org/react';
+import './FoodItemCard.css';
 import Burger from '../../assets/images/categories/burger.png';
 import { HeartIcon } from '../util/HeartIcon';
 import { VegIcon } from '../util/VegIcon';
@@ -85,7 +86,7 @@ const FoodItemCard = ({
           <div className="flex flex-col items-center justify-center max-w-[15rem]">
             <p className={`${titleSize} capitalize opacity-70 mb-1`}>{title}</p>
             <Divider orientation="horizontal" />
-            <div className="flex flex-1 flex-row flex-wrap justify-center items-start max-w-[100%] max-h-12 overflow-y-auto">
+            <div className="flex flex-1 flex-row flex-wrap justify-center items-start max-w-[100%] max-h-12 overflow-y-auto food-item-scroll">
               {ingredients.map((ing, index) => (
                 <Card
                   key={index}
