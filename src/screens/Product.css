@@ -1,0 +1,5 @@
+.text-style {
+  opacity: 30%;
+  color: transparent;
+  -webkit-text-stroke: 3px darksalmon;
+}
